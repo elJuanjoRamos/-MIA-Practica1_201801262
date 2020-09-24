@@ -1,0 +1,198 @@
+extends layout
+
+block content
+  div(id="myTabContent" class="tab-content")
+    
+    div(class="tab-pane fade fade active in" id="apitype")
+      div(class="container")
+        h1 TEMPORAL
+
+        div(class="panel panel-primary")
+          div(class="panel-heading")
+            h3(class="panel-title") GET
+          div(class="panel-body") 
+            a(href="localhost:3000/crearModelo") localhost:3000/crearModelo
+
+
+        
+
+        div(class="col-md-12")
+          div(class="card")
+            div(class="containerCard")
+              h4
+                b Resultado
+              div
+                h3=mensaje
+
+
+
+
+    div(class="tab-pane fade" id="apistore")
+      div(class="container")
+        h1 Store
+
+        div(class="panel panel-primary")
+          div(class="panel-heading")
+            h3(class="panel-title") GET
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/store/") localhost:3000/api/ws/mc/store/
+
+        div(class="panel panel-primary")
+          div(class="panel-heading")
+            h3(class="panel-title") GET
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/store/:idStore") localhost:3000/api/ws/mc/store/:idStore
+
+        div(class="panel panel-success")
+          div(class="panel-heading")
+            h3(class="panel-title") POST
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/store/") localhost:3000/api/ws/mc/store/
+
+        div(class="panel panel-danger")
+          div(class="panel-heading")
+            h3(class="panel-title") DELETE
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/store/:idStore") localhost:3000/api/ws/mc/store/:idStore
+
+        div(class="panel panel-warning")
+          div(class="panel-heading")
+            h3(class="panel-title") PUT
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/store/:idStore") localhost:3000/api/ws/mc/store/:idStore
+
+    div(class="tab-pane fade" id="apistoretype")
+      div(class="container")
+        h1 StoreType
+
+        div(class="panel panel-primary")
+          div(class="panel-heading")
+            h3(class="panel-title") GET
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/storetype/") localhost:3000/api/ws/mc/storetype/
+
+        div(class="panel panel-primary")
+          div(class="panel-heading")
+            h3(class="panel-title") GET
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/storetype/:idStoreType") localhost:3000/api/ws/mc/storetype/:idStoreType
+
+        div(class="panel panel-success")
+          div(class="panel-heading")
+            h3(class="panel-title") POST
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/storetype/") localhost:3000/api/ws/mc/storetype/
+
+        div(class="panel panel-danger")
+          div(class="panel-heading")
+            h3(class="panel-title") DELETE
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/storetype/:idStoreType") localhost:3000/api/ws/mc/storetype/:idStoreType
+
+        div(class="panel panel-warning")
+          div(class="panel-heading")
+            h3(class="panel-title") PUT
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/storetype/:idStoreType") localhost:3000/api/ws/mc/storetype/:idStoreType
+
+    div(class="tab-pane fade" id="apicategory")
+      div(class="container")
+        h1 Category
+
+        div(class="panel panel-primary")
+          div(class="panel-heading")
+            h3(class="panel-title") GET
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/category/") localhost:3000/api/ws/mc/category/
+
+        div(class="panel panel-primary")
+          div(class="panel-heading")
+            h3(class="panel-title") GET
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/category/:idCategory") localhost:3000/api/ws/mc/category/:idCategory
+
+        div(class="panel panel-success")
+          div(class="panel-heading")
+            h3(class="panel-title") POST
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/category/") localhost:3000/api/ws/mc/category/
+
+        div(class="panel panel-danger")
+          div(class="panel-heading")
+            h3(class="panel-title") DELETE
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/category/:idCategory") localhost:3000/api/ws/mc/category/:idCategory
+
+        div(class="panel panel-warning")
+          div(class="panel-heading")
+            h3(class="panel-title") PUT
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/category/:idCategory") localhost:3000/api/ws/mc/category/:idCategory
+        
+    div(class="tab-pane fade" id="apicategorystore")
+      div(class="container")
+        h1 CategoryStore
+
+        div(class="panel panel-primary")
+          div(class="panel-heading")
+            h3(class="panel-title") GET
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/categorystore/") localhost:3000/api/ws/mc/categorystore/
+
+        div(class="panel panel-primary")
+          div(class="panel-heading")
+            h3(class="panel-title") GET
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/categorystore/:idCategoryStore") localhost:3000/api/ws/mc/categorystore/:idCategoryStore
+
+        div(class="panel panel-success")
+          div(class="panel-heading")
+            h3(class="panel-title") POST
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/categorystore/") localhost:3000/api/ws/mc/categorystore/
+
+        div(class="panel panel-danger")
+          div(class="panel-heading")
+            h3(class="panel-title") DELETE
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/categorystore/:idCategoryStore") localhost:3000/api/ws/mc/categorystore/:idCategoryStore
+
+        div(class="panel panel-warning")
+          div(class="panel-heading")
+            h3(class="panel-title") PUT
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/categorystore/:idCategoryStore") localhost:3000/api/ws/mc/categorystore/:idCategoryStore
+
+    div(class="tab-pane fade" id="apiproduct")
+      div(class="container")
+        h1 Product
+
+        div(class="panel panel-primary")
+          div(class="panel-heading")
+            h3(class="panel-title") GET
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/product/") localhost:3000/api/ws/mc/product/
+
+        div(class="panel panel-primary")
+          div(class="panel-heading")
+            h3(class="panel-title") GET
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/product/:idProduct") localhost:3000/api/ws/mc/product/:idProduct
+
+        div(class="panel panel-success")
+          div(class="panel-heading")
+            h3(class="panel-title") POST
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/product/") localhost:3000/api/ws/mc/product/
+
+        div(class="panel panel-danger")
+          div(class="panel-heading")
+            h3(class="panel-title") DELETE
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/product/:idProduct") localhost:3000/api/ws/mc/product/:idProduct
+
+        div(class="panel panel-warning")
+          div(class="panel-heading")
+            h3(class="panel-title") PUT
+          div(class="panel-body") 
+            a(href="localhost:3000/api/ws/mc/product/:idProduct") localhost:3000/api/ws/mc/product/:idProduct

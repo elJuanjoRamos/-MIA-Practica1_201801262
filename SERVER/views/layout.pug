@@ -1,0 +1,69 @@
+doctype html
+html
+  head
+    title= title
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+    meta(charset="utf-8")
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/shop-homepage.css')
+    link(rel='stylesheet', href='/stylesheets/styling.css')
+    link(rel='stylesheet', href='/stylesheets/myown.css')
+    link(rel='stylesheet', href='/stylesheets/whoarewe.css') 
+    link(href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet" type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css ')
+    link(href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type='text/css')
+    link(href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet")
+          
+  body
+    div(class="navbar navbar-default" role="navigation")
+      div(class="container-fluid")
+        div(class="navbar-header")
+          button(type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse")
+            span(class="sr-only") Toggle navigation
+            span(class="icon-bar")
+            span(class="icon-bar")
+            span(class="icon-bar")
+            
+      ul(id="myTab" class="nav nav-tabs" style="margin: 22px 0px 0px 0px;")
+
+        li(class="")
+          a(href="#apitype" data-toggle="tab" aria-expanded="true") API TABLE TEMPORAL 
+
+        li(class="dropdown")
+          a(class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false") STORE
+            span(class="caret")
+          ul(class="dropdown-menu")
+            li(class="")
+              a(href="#apistore" data-toggle="tab" aria-expanded="false") API STORE
+            li(class="")
+              a(href="#apistoretype" data-toggle="tab" aria-expanded="false") API STORETYPE
+
+        li(class="dropdown")
+          a(class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false") CATEGORY
+            span(class="caret")
+          ul(class="dropdown-menu")
+            li(class="")
+              a(href="#apicategory" data-toggle="tab" aria-expanded="false") API CATEGORY
+            li(class="")
+              a(href="#apicategorystore" data-toggle="tab" aria-expanded="false") API CATEGORYSTORE
+
+        li(class="")
+          a(href="#apiproduct" data-toggle="tab" aria-expanded="true") API PRODUCT
+
+      
+
+              
+          
+    block content
+    
+    //sblock foot
+    //include ./footer.pug
+    
+    script(rel="text/javascript" src="/javascripts/jquery-3.2.1.min.js")
+    script(rel="text/javascript" src="/javascripts/bootstrap.js")
+    script(rel="text/javascript" src="/javascripts/bootstrap-tabcollapse.js")
+    script() $('#myTab').tabCollapse();
+      
+    
+    
+    

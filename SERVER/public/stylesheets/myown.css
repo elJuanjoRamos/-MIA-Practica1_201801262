@@ -1,0 +1,25 @@
+.logintitlediv {
+  text-align: center;
+  margin-top: 50px;
+/*border: 1px solid black; */
+}
+
+.loginformdiv {
+  /*border: 1px solid black;*/
+}
+
+.formlogin {
+  margin-left: 30px;
+}
+
+.spaceLogIn {
+  margin-left: 10px;
+}
+
+.spaceCancel {
+  margin-left: 100px;
+}
+
+.signupnow {
+    margin: 20px 0px 0px 55px;
+}

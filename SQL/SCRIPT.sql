@@ -1,3 +1,4 @@
+DROP DATABASE IF EXISTS PRACTICA1;
 CREATE DATABASE PRACTICA1;
 USE PRACTICA1;
 
@@ -32,6 +33,8 @@ SHOW VARIABLES LIKE "secure_file_priv";
 
 
 SET GLOBAL local_infile = 1; 
+
+
 LOAD DATA INFILE '/var/lib/mysql-files/DataCenterData.csv'
 into table TEMP
 character set latin1
@@ -42,12 +45,15 @@ ignore 1 lines
 set fecha_registro = str_to_date(@var1, '%d/%m/%Y');
 
 
+
+
 CREATE USER 'practica1a'@'localhost' identified BY 'P@ssword1';
 GRANT ALL PRIVILEGES ON * . * TO 'practica1a'@'localhost';
 FLUSH PRIVILEGES
 
 
-
+ALTER USER 'practica1a'@'localhost' IDENTIFIED WITH mysql_native_password BY 'P@ssword1';
+flush privileges;
 
 
 

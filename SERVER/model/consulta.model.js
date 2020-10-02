@@ -65,7 +65,7 @@ consulta.consulta4 = function (callback) {
 consulta.consulta5 = function (callback) {
         if (database) {
     
-                var query = "SELECT P.id_person, P.name_person, P.date_registro, sum(total) as total FROM VENTA JOIN PERSON AS P ON P.id_person = VENTA.id_person group by id_person order  by total desc;";
+                var query = "CALL CALL_CONSULTA5;";
 
                 database.query(query, function (error, result) {
                         if (error) throw error;
@@ -87,7 +87,56 @@ consulta.consulta6 = function (callback) {
         }
     }
     
+    consulta.consulta7 = function (callback) {
+        if (database) {
+    
+                var query = "CALL CALL_CONSULTA7;";
+    
+                database.query(query, function (error, result) {
+                        if (error) throw error;
+                        callback(result);
+                });
+        }
+    }
+    
+    
+    consulta.consulta8 = function (callback) {
+        if (database) {
+    
+                var query = "CALL CALL_CONSULTA8;";
+    
+                database.query(query, function (error, result) {
+                        if (error) throw error;
+                        callback(result);
+                });
+        }
+    }
+    
+    
+    consulta.consulta9 = function (callback) {
+        if (database) {
+    
+                var query = "CALL CALL_CONSULTA9;";
+    
+                database.query(query, function (error, result) {
+                        if (error) throw error;
+                        callback(result);
+                });
+        }
+    }
     
 
+    consulta.consulta10 = function (callback) {
+        if (database) {
+    
+                var query = "CALL CALL_CONSULTA10;";
+    
+                database.query(query, function (error, result) {
+                        if (error) throw error;
+                        callback(result);
+                });
+        }
+    }
+    
 
 module.exports = consulta;

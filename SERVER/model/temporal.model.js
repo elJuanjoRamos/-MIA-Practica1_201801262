@@ -2,7 +2,7 @@ var database = require("../config/database.config");
 var temporal = {};
 
 
-temporal.createModel = function (callback) {
+temporal.createTemporal = function (callback) {
         if (database) {
 
                 var query =
@@ -34,7 +34,7 @@ temporal.createModel = function (callback) {
 
 
 
-temporal.insertData = function (callback) {
+temporal.cargarTemporal = function (callback) {
 
         if (database) {
                 var query1 = "SET GLOBAL local_infile = 1;"
@@ -62,10 +62,10 @@ temporal.insertData = function (callback) {
         }
 }
 
-temporal.deleteTable = function (callback) {
+temporal.eliminarTemporal = function (callback) {
         if (database) {
 
-                var query = "DROP TABLE TEMP;";
+                var query = "DELETE FROM TEMP;";
                 database.query(query, function (error, resultado) {
                         if (error) throw error;
                         callback(resultado);

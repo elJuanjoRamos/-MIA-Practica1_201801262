@@ -6,9 +6,9 @@ var tempoRouter = express.Router();
 ////TABLA TEMPORAL
 
 //  GET
-tempoRouter.get('/crearModelo', function (req, res) {
+tempoRouter.get('/crearTemporal', function (req, res) {
 
-  temporal.createModel(function (result) {
+  temporal.createTemporal(function (result) {
     if (typeof result !== undefined) {
 
       res.json(result)
@@ -36,9 +36,9 @@ tempoRouter.get('/getDatatemp', function (req, res) {
 
 
 ////  POST
-tempoRouter.get('/insertData', function (req, res) {
+tempoRouter.get('/cargarTemporal', function (req, res) {
 
-  temporal.insertData(function (result) {
+  temporal.cargarTemporal(function (result) {
     if (typeof result !== undefined) {
 
 
@@ -53,9 +53,9 @@ tempoRouter.get('/insertData', function (req, res) {
 
 
 // DELETE
-tempoRouter.get('/deleteTable', function (req, res) {
+tempoRouter.get('/eliminarTemporal', function (req, res) {
 
-  temporal.deleteTable(function (result) {
+  temporal.eliminarTemporal(function (result) {
     if (typeof result !== undefined) {
 
       res.json(result);

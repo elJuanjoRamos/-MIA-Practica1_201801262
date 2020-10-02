@@ -36,9 +36,10 @@ app.use(function(req, res, next) {
 
 
 var temporal = require('./routes/temporal.route');
-
+var consulta = require('./routes/consultas.route');
 
 app.use("/", temporal);
+app.use("/", consulta);
 
 
 
